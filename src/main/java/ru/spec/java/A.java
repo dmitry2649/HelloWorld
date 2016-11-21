@@ -6,8 +6,8 @@ public class A {
 	private int y;
 	
 	public A() {
-		x = 1;
-		y = 1;
+		x = 5;
+		y = 5;
 	}
 	
 	public int getX() {
@@ -17,4 +17,5 @@ public class A {
 	public int getY() {
 		return y;
 	}
+	
 }
