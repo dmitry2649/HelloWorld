@@ -1,14 +1,25 @@
 apply plugin: 'java'
 apply plugin: 'application'
 apply plugin: 'idea'
+apply plugin: 'eclipse'
 
 mainClassName = "ru.spec.java.HelloWorld"
 
 repositories {
-	mavenCentral();
+	mavenCentral()
 }
 
 dependencies {
 	compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.5'
+}
+
+ext {
+	test1 = 123;
+	test2 = 321;
+}
+
+task testExt << {
+	println test1;
+	println test2;
 }
 
