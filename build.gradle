@@ -1,7 +1,10 @@
+import ru.masterdata.CustomPlugin
+
 apply plugin: 'java'
 apply plugin: 'application'
 apply plugin: 'idea'
 apply plugin: 'eclipse'
+apply plugin: CustomPlugin
 
 mainClassName = "ru.spec.java.HelloWorld"
 
@@ -22,4 +25,6 @@ task testExt << {
 	println test1;
 	println test2;
 }
+
+task2.dependsOn task1
 
